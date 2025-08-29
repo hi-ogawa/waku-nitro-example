@@ -8,15 +8,6 @@ export default defineConfig({
         server: {
           environmentName: "rsc",
         },
-        config: {
-          esbuild: {
-            options: {
-              // Waku uses top level await 
-              // ERROR: Top-level await is not available in the configured target environment ("es2019")
-              target: 'esnext',
-            }
-          }
-        }
       }),
     ],
   }
