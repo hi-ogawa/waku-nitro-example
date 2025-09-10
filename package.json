@@ -6,16 +6,16 @@
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",
-    "start": "node .output/server/index.mjs"
+    "start": "NITRO_HOST=127.0.0.1 node .output/server/index.mjs"
   },
   "dependencies": {
-    "@hiogawa/vite-plugin-nitro": "^0.0.1",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-server-dom-webpack": "19.1.1",
     "waku": "https://pkg.pr.new/wakujs/waku@4585faa"
   },
   "devDependencies": {
+    "@hiogawa/vite-plugin-nitro": "^0.0.2",
     "@tailwindcss/postcss": "4.1.11",
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
