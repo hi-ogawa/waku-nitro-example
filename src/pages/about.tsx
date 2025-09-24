@@ -11,6 +11,7 @@ export default async function AboutPage() {
       <Link to="/" className="mt-4 inline-block underline">
         Return home
       </Link>
+      <div>Rendered at {new Date().toISOString()}</div>
     </div>
   );
 }
