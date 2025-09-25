@@ -13,7 +13,7 @@ export default defineConfig({
         },
       }),
       fontless({
-        provider: 'google'
+        provider: 'google',
       }),
     ],
   }
