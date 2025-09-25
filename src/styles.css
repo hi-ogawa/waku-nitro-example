@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+.fontless {
+  font-family: "Nunito", sans-serif;
+}

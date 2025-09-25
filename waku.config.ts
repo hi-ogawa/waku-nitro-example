@@ -1,6 +1,7 @@
 import { defineConfig } from "waku/config"
 import nitro from "@hiogawa/vite-plugin-nitro";
 import tailwindcss from "@tailwindcss/vite"
+import { fontless } from "fontless"
 
 export default defineConfig({
   vite: {
@@ -10,6 +11,13 @@ export default defineConfig({
         server: {
           environmentName: "rsc",
         },
+      }),
+      fontless({
+        provider: 'google',
+        // TODO: fontless should auto configure based on `build.assetsDir`
+        assets: {
+          prefix: '/assets/_fonts',
+        }
       }),
     ],
   }

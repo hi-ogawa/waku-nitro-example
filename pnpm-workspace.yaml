@@ -1,0 +1,2 @@
+overrides:
+  "@vitejs/plugin-rsc": 0.4.31
