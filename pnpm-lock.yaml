@@ -37,8 +37,8 @@ importers:
         specifier: 19.1.9
         version: 19.1.9(@types/react@19.1.13)
       fontless:
-        specifier: file:/home/hiroshi/code/others/fontaine/packages/fontless/fontless-0.0.2.tgz
-        version: file:../../others/fontaine/packages/fontless/fontless-0.0.2.tgz(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0)
+        specifier: file:./fontless-0.0.2.tgz
+        version: file:fontless-0.0.2.tgz(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0)
       postcss:
         specifier: 8.5.6
         version: 8.5.6
@@ -1474,8 +1474,8 @@ packages:
   fontkit@2.0.4:
     resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
 
-  fontless@file:../../others/fontaine/packages/fontless/fontless-0.0.2.tgz:
-    resolution: {integrity: sha512-w4mO6CFYFhQETDj8a1xPawucOMSAlyRuhNVA+vU3dkeM6Bu0XgE2SEoHSrMhOj2D97adGvyQrdOcvFAZ5anpgg==, tarball: file:../../others/fontaine/packages/fontless/fontless-0.0.2.tgz}
+  fontless@file:fontless-0.0.2.tgz:
+    resolution: {integrity: sha512-w4mO6CFYFhQETDj8a1xPawucOMSAlyRuhNVA+vU3dkeM6Bu0XgE2SEoHSrMhOj2D97adGvyQrdOcvFAZ5anpgg==, tarball: file:fontless-0.0.2.tgz}
     version: 0.0.2
     engines: {node: '>=18.12.0'}
 
@@ -4114,7 +4114,7 @@ snapshots:
       unicode-properties: 1.4.1
       unicode-trie: 2.0.0
 
-  fontless@file:../../others/fontaine/packages/fontless/fontless-0.0.2.tgz(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0):
+  fontless@file:fontless-0.0.2.tgz(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0):
     dependencies:
       consola: 3.4.2
       css-tree: 3.1.0
