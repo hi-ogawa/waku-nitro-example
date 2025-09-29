@@ -19,7 +19,7 @@
     "@tailwindcss/vite": "4.1.13",
     "@types/react": "19.1.13",
     "@types/react-dom": "19.1.9",
-    "fontless": "file:./fontless-0.0.2.tgz",
+    "fontless": "https://pkg.pr.new/fontless@651",
     "postcss": "8.5.6",
     "tailwindcss": "4.1.13",
     "typescript": "5.9.2"

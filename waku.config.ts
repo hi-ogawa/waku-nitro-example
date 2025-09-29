@@ -14,9 +14,8 @@ export default defineConfig({
       }),
       fontless({
         provider: 'google',
-        // TODO: fontless should auto configure based on `build.assetsDir`
-        assets: {
-          prefix: '/assets/_fonts',
+        defaults: {
+          preload: true,
         }
       }),
     ],

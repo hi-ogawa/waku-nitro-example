@@ -37,8 +37,8 @@ importers:
         specifier: 19.1.9
         version: 19.1.9(@types/react@19.1.13)
       fontless:
-        specifier: file:./fontless-0.0.2.tgz
-        version: file:fontless-0.0.2.tgz(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0)
+        specifier: https://pkg.pr.new/fontless@651
+        version: https://pkg.pr.new/fontless@651(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0)
       postcss:
         specifier: 8.5.6
         version: 8.5.6
@@ -137,8 +137,9 @@ packages:
   '@capsizecss/metrics@3.5.0':
     resolution: {integrity: sha512-Ju2I/Qn3c1OaU8FgeW4Tc22D4C9NwyVfKzNmzst59bvxBjPoLYNZMqFYn+HvCtn4MpXwiaDtCE8fNuQLpdi9yA==}
 
-  '@capsizecss/unpack@2.4.0':
-    resolution: {integrity: sha512-GrSU71meACqcmIUxPYOJvGKF0yryjN/L1aCuE9DViCTJI7bfkjgYDPD1zbNDcINJwSSP6UaBZY9GAbYDO7re0Q==}
+  '@capsizecss/unpack@3.0.0':
+    resolution: {integrity: sha512-+ntATQe1AlL7nTOYjwjj6w3299CgRot48wL761TUGYpYgAou3AaONZazp0PKZyCyWhudWsjhq1nvRHOvbMzhTA==}
+    engines: {node: '>=18'}
 
   '@cloudflare/kv-asset-handler@0.4.0':
     resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
@@ -1078,9 +1079,6 @@ packages:
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
-  blob-to-buffer@1.2.9:
-    resolution: {integrity: sha512-BF033y5fN6OCofD3vgHmNtwZWRcq9NLyyxyILx9hfMy1sXYy4ojFl765hJ2lP0YaN2fuxPaLO2Vzzoxy0FLFFA==}
-
   brace-expansion@2.0.2:
     resolution: {integrity: sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ==}
 
@@ -1217,9 +1215,6 @@ packages:
   croner@9.1.0:
     resolution: {integrity: sha512-p9nwwR4qyT5W996vBZhdvBCnMhicY5ytZkR4D1Xj0wuTDEiMnjwR57Q3RXYY/s0EpX6Ay3vgIcfaR+ewGHsi+g==}
     engines: {node: '>=18.0'}
-
-  cross-fetch@3.2.0:
-    resolution: {integrity: sha512-Q+xVJLoGOeIMXZmbUK4HYk+69cQH6LudR0Vu/pRm2YlU/hDV9CiS0gKUMaWY5f2NeUH9C1nV3bsTlCo0FsTV1Q==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1468,14 +1463,16 @@ packages:
     resolution: {integrity: sha512-YyZM99iHrqLKjmt4LJDj58KI+fYyufRLBSYcqycxf//KpBk9FoewoGX0450m9nB44qrZnovzC2oeP5hUibxc/g==}
     engines: {node: '>=18'}
 
-  fontaine@0.6.0:
-    resolution: {integrity: sha512-cfKqzB62GmztJhwJ0YXtzNsmpqKAcFzTqsakJ//5COTzbou90LU7So18U+4D8z+lDXr4uztaAUZBonSoPDcj1w==}
+  fontaine@https://pkg.pr.new/unjs/fontaine/fontaine@f81ab22:
+    resolution: {tarball: https://pkg.pr.new/unjs/fontaine/fontaine@f81ab22}
+    version: 0.6.0
+    engines: {node: '>=18.12.0'}
 
   fontkit@2.0.4:
     resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
 
-  fontless@file:fontless-0.0.2.tgz:
-    resolution: {integrity: sha512-w4mO6CFYFhQETDj8a1xPawucOMSAlyRuhNVA+vU3dkeM6Bu0XgE2SEoHSrMhOj2D97adGvyQrdOcvFAZ5anpgg==, tarball: file:fontless-0.0.2.tgz}
+  fontless@https://pkg.pr.new/fontless@651:
+    resolution: {tarball: https://pkg.pr.new/fontless@651}
     version: 0.0.2
     engines: {node: '>=18.12.0'}
 
@@ -2857,13 +2854,9 @@ snapshots:
 
   '@capsizecss/metrics@3.5.0': {}
 
-  '@capsizecss/unpack@2.4.0':
+  '@capsizecss/unpack@3.0.0':
     dependencies:
-      blob-to-buffer: 1.2.9
-      cross-fetch: 3.2.0
       fontkit: 2.0.4
-    transitivePeerDependencies:
-      - encoding
 
   '@cloudflare/kv-asset-handler@0.4.0':
     dependencies:
@@ -3727,8 +3720,6 @@ snapshots:
     dependencies:
       file-uri-to-path: 1.0.0
 
-  blob-to-buffer@1.2.9: {}
-
   brace-expansion@2.0.2:
     dependencies:
       balanced-match: 1.0.2
@@ -3864,12 +3855,6 @@ snapshots:
       readable-stream: 4.7.0
 
   croner@9.1.0: {}
-
-  cross-fetch@3.2.0:
-    dependencies:
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
 
   cross-spawn@7.0.6:
     dependencies:
@@ -4089,18 +4074,16 @@ snapshots:
       unicorn-magic: 0.1.0
     optional: true
 
-  fontaine@0.6.0:
+  fontaine@https://pkg.pr.new/unjs/fontaine/fontaine@f81ab22:
     dependencies:
       '@capsizecss/metrics': 3.5.0
-      '@capsizecss/unpack': 2.4.0
+      '@capsizecss/unpack': 3.0.0
       css-tree: 3.1.0
       magic-regexp: 0.10.0
       magic-string: 0.30.19
       pathe: 2.0.3
       ufo: 1.6.1
       unplugin: 2.3.10
-    transitivePeerDependencies:
-      - encoding
 
   fontkit@2.0.4:
     dependencies:
@@ -4114,13 +4097,13 @@ snapshots:
       unicode-properties: 1.4.1
       unicode-trie: 2.0.0
 
-  fontless@file:fontless-0.0.2.tgz(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0):
+  fontless@https://pkg.pr.new/fontless@651(@netlify/blobs@9.1.2)(db0@0.3.2)(ioredis@5.8.0):
     dependencies:
       consola: 3.4.2
       css-tree: 3.1.0
       defu: 6.1.4
       esbuild: 0.25.10
-      fontaine: 0.6.0
+      fontaine: https://pkg.pr.new/unjs/fontaine/fontaine@f81ab22
       jiti: 2.6.0
       lightningcss: 1.30.1
       magic-string: 0.30.19
@@ -4146,7 +4129,6 @@ snapshots:
       - '@vercel/kv'
       - aws4fetch
       - db0
-      - encoding
       - idb-keyval
       - ioredis
       - uploadthing
