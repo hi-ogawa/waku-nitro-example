@@ -7,6 +7,7 @@ You can speficy [`preset`](https://nitro.build/config#preset) (deployment target
 ```js
 // in waku.config.ts
 export default defineConfig({
+  adapter: 'waku/adapters/edge',
   vite: {
     plugins: [
       nitro({
