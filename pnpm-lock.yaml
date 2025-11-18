@@ -22,8 +22,8 @@ importers:
         version: https://pkg.pr.new/wakujs/waku@ea1ac9c(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(react-dom@19.2.0(react@19.2.0))(react-server-dom-webpack@19.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(webpack@5.101.0))(react@19.2.0)(terser@5.44.1)
     devDependencies:
       '@hiogawa/vite-plugin-nitro':
-        specifier: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-nitro@9d35af2
-        version: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-nitro@9d35af2(@netlify/blobs@9.1.2)(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1))
+        specifier: 0.0.4
+        version: 0.0.4(@netlify/blobs@9.1.2)(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1))
       '@tailwindcss/vite':
         specifier: 4.1.17
         version: 4.1.17(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1))
@@ -288,9 +288,8 @@ packages:
   '@fastify/busboy@3.2.0':
     resolution: {integrity: sha512-m9FVDXU3GT2ITSe0UaMA5rU3QkfC/UXtCU8y0gSN/GugTqtVldOBWIB5V6V3sbmenVZUIpU6f+mPEO2+m5iTaA==}
 
-  '@hiogawa/vite-plugin-nitro@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-nitro@9d35af2':
-    resolution: {tarball: https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-nitro@9d35af2}
-    version: 0.0.3
+  '@hiogawa/vite-plugin-nitro@0.0.4':
+    resolution: {integrity: sha512-5S3+Q0hxYOZtmdVHTKrao8+EPMUMiW0Db256Qk3y0Ru4ECWhQkFJQU0k7shDkXmZ0MtoEfTjeGTo0hMAfvo7vQ==}
     peerDependencies:
       vite: '*'
 
@@ -2886,7 +2885,7 @@ snapshots:
   '@fastify/busboy@3.2.0':
     optional: true
 
-  '@hiogawa/vite-plugin-nitro@https://pkg.pr.new/hi-ogawa/vite-plugins/@hiogawa/vite-plugin-nitro@9d35af2(@netlify/blobs@9.1.2)(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1))':
+  '@hiogawa/vite-plugin-nitro@0.0.4(@netlify/blobs@9.1.2)(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1))':
     dependencies:
       h3: 1.15.4
       nitropack: 2.12.9(@netlify/blobs@9.1.2)
