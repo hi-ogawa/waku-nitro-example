@@ -3,6 +3,7 @@ import nitro from "@hiogawa/vite-plugin-nitro";
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
+  adapter: 'waku/adapters/edge',
   vite: {
     plugins: [
       tailwindcss(),
