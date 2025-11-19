@@ -1,27 +1,35 @@
 # Waku + Nitro
 
-The example of integrating [Nitro](https://nitro.build/) on [Waku](https://github.com/wakujs/waku) for multi platform deployment via [`@hiogawa/vite-plugin-nitro`](https://github.com/hi-ogawa/vite-plugins/tree/main/packages/nitro).
-
-You can speficy [`preset`](https://nitro.build/config#preset) (deployment target) via plugin options or `NITRO_PRESET` environment, e.g.
+The example of integrating [Nitro](https://nitro.build/) on [Waku](https://github.com/wakujs/waku) for multi platform deployment.
 
 ```js
-// in waku.config.ts
+// [waku.config.ts]
 export default defineConfig({
   adapter: "waku/adapters/edge",
-  vite: {
-    plugins: [
-      nitro({
-        server: {
-          environmentName: "rsc",
-        },
-        config: {
-          preset: "vercel",
-        },
-      }),
-    ],
-  },
 });
 ```
+
+```js
+// [nitro.config.ts]
+export default defineNitroConfig({
+  publicAssets: [
+    {
+      dir: "./dist/public",
+      baseURL: "/",
+    },
+    {
+      dir: "./dist/public/assets",
+      baseURL: "/assets",
+      maxAge: 31536000,
+    },
+  ],
+  renderer: {
+    handler: './nitro-renderer.js',
+  },
+}),
+```
+
+You can speficy [`preset`](https://nitro.build/config#preset) (deployment target) via nitro config or `NITRO_PRESET` environment, e.g.
 
 ```sh
 NITRO_PRESET=vercel pnpm build
