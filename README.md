@@ -32,5 +32,5 @@ export default defineNitroConfig({
 You can speficy [`preset`](https://nitro.build/config#preset) (deployment target) via nitro config or `NITRO_PRESET` environment, e.g.
 
 ```sh
-NITRO_PRESET=vercel pnpm build
+NITRO_PRESET=vercel-static pnpm build
 ```
