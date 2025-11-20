@@ -17,5 +17,4 @@ export default defineNitroConfig({
   },
   scanDirs: [],
   imports: false,
-  preset: 'vercel',
 })
