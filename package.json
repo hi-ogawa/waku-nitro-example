@@ -12,7 +12,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-server-dom-webpack": "19.2.0",
-    "waku": "https://pkg.pr.new/wakujs/waku@e50598b"
+    "waku": "https://pkg.pr.new/wakujs/waku@87ffb71"
   },
   "devDependencies": {
     "@tailwindcss/vite": "4.1.17",
