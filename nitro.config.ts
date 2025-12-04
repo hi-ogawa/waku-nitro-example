@@ -13,8 +13,8 @@ export default defineNitroConfig({
     },
   ],
   renderer: {
-    handler: './nitro-renderer.js',
+    handler: "./nitro-renderer.js",
   },
   scanDirs: [],
   imports: false,
-})
+});
